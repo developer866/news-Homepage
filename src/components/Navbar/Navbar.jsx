@@ -10,20 +10,19 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">MySite</div>
+        <div className="logo"><img src="../../../assets/images/logo.svg" alt="" /></div>
 
         {/* Hamburger Button */}
         <button className="hamburger" onClick={openMenu}>
-          <span className="bar" />
-          <span className="bar" />
-          <span className="bar" />
+        <img src="../../../assets/images/icon-menu.svg" alt="hello" />
         </button>
 
         {/* Desktop Nav Links */}
         <div className="nav-links desktop">
           <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
+          <a href="#">new</a>
+          <a href="#">popular</a>
+          <a href="#">Trending</a>
           <a href="#">Contact</a>
         </div>
       </div>
@@ -31,10 +30,11 @@ function Navbar() {
  
       {isOpen && (
         <div className="mobile-menu">
-          <button className="close-btn" onClick={closeMenu}>×</button>
+          <button className="close-btn" onClick={closeMenu}> <img src="../../../assets/images/icon-menu-close.svg" alt="hello" /></button>
           <a href="#" onClick={closeMenu}>Home</a>
-          <a href="#" onClick={closeMenu}>About</a>
-          <a href="#" onClick={closeMenu}>Services</a>
+          <a href="#" onClick={closeMenu}>New</a>
+          <a href="#" onClick={closeMenu}>popular</a>
+          <a href="#" onClick={closeMenu}>Trending</a>
           <a href="#" onClick={closeMenu}>Contact</a>
         </div>
       )}

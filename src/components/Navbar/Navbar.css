@@ -1,100 +1,113 @@
 /* General Navbar Styles */
+*{
+  margin: 0;
+
+}
 .navbar {
-    background-color: #333;
-    padding: 1rem;
-    position: relative;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    margin-left: 1rem;
-    text-decoration: none;
-  }
-  
-  .nav-links a:hover {
-    color: #ddd;
-  }
-  
-  /* Hamburger */
+  background-color: white;
+  /* border: 1px solid black; */
+  padding: 1rem;
+  position: relative;
+
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: black;
+  margin-left: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Desktop Nav */
+.desktop {
+  display: flex;
+  /* max-width: 1200px; */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
   .hamburger {
+    display: flex;
+  }
+
+  .desktop {
     display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
     flex-direction: column;
-    gap: 5px;
+    position: absolute;
+    width: 55%;
+    top: 0px;
+    left: 46%;
+    height: 100vh;
+    background-color: white;
+    /* color: black; */
+    padding: 1rem;
+    z-index: 999;
+    margin-top: 1rem;
+  }
+  img {
+    width: 100%;
+  }
+  .mobile-menu a {
+    color: black;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    /* border-bottom: 1px solid #555; */
+  }
+
+  .mobile-menu a:hover {
+    background-color: #555;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    font-size: 2rem;
     background: none;
     border: none;
+    color: white;
     cursor: pointer;
+    margin-bottom: 1rem;
   }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 2px;
-  }
-  
-  /* Desktop Nav */
-  .desktop {
-    display: flex;
-  }
-  
-  /* Mobile Menu */
-  .mobile-menu {
-    display: none;
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex;
-    }
-  
-    .desktop {
-      display: none;
-    }
-  
-    .mobile-menu {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      width: 50%;
-      top: 0px;
-      left: 46%;
-      background-color: #444;
-      padding: 1rem;
-      z-index: 999;
-    }
-  
-    .mobile-menu a {
-      color: white;
-      padding: 0.75rem 0;
-      text-decoration: none;
-      border-bottom: 1px solid #555;
-    }
-  
-    .mobile-menu a:hover {
-      background-color: #555;
-    }
-  
-    .close-btn {
-      align-self: flex-end;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-      margin-bottom: 1rem;
-    }
-  }
-  
+}
