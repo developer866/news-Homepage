@@ -7,13 +7,13 @@ function Body() {
     <div class="parent">
       <div class="div1">
         <img
-          src="../../../assets/images/image-web-3-desktop.jpg"
+          src="/images/image-web-3-desktop.jpg"
           alt="Background image"
           className="image-desktop"
           srcset=""
         />
         <img
-          src="../../../assets/images/image-web-3-mobile.jpg"
+          src="/images/image-web-3-mobile.jpg"
           className="image-mobile"
           alt="Background image"
           srcset=""
@@ -60,7 +60,7 @@ function Body() {
 
       <div class="div4">
         <div className="div4-sub sub-div-1">
-          <img src="../../../assets/images/image-retro-pcs.jpg" alt="laptops" />
+          <img src="/images/image-retro-pcs.jpg" alt="laptops" />
           <div className="div4-sub-details">
             <h1>01</h1>
             <h3>Reviving Retro PCS</h3>
@@ -69,10 +69,7 @@ function Body() {
         </div>
 
         <div className="div4-sub sub-div-2">
-          <img
-            src="../../../assets/images/image-top-laptops.jpg"
-            alt="laptops"
-          />
+          <img src="/images/image-top-laptops.jpg" alt="laptops" />
           <div className="div4-sub-details">
             <h1>02</h1>
             <h3>Top 10 Laptopss of 2022</h3>
@@ -80,10 +77,7 @@ function Body() {
           </div>
         </div>
         <div className="div4-sub sub-div-3">
-          <img
-            src="../../../assets/images/image-gaming-growth.jpg"
-            alt="laptops"
-          />
+          <img src="/images/image-gaming-growth.jpg" alt="laptops" />
           <div className="div4-sub-details">
             <h1>03</h1>
             <h3>The Growth of Gaming</h3>
