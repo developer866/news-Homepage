@@ -1,4 +1,4 @@
-/* === Base Styles (Mobile First) === */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@
 
 .div1 img {
   width: 100%;
-  /* border: 1px solid blue; */
+
 }
 
 .div2 {
@@ -69,7 +69,6 @@
   margin: 0.5rem 0;
   font-size: 20px;
   color: hsl(36, 100%, 99%);
-  /* color: red; */
 }
 .box p {
   font-size: 16px;
@@ -86,7 +85,7 @@
 }
 .div4-sub img {
   width: 40%;
-  /* height: 125px; */
+ 
 }
 .div4-sub-details {
   width: 60%;
@@ -165,5 +164,8 @@
     grid-row: 3 / 4;
     display: flex;
     gap: 1rem;
+    img{
+      height: 150px;
+    }
   }
 }
