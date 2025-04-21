@@ -10,11 +10,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo"><img src="../../../assets/images/logo.svg" alt="" /></div>
+        <div className="logo"><img src="images/logo.svg" alt="" /></div>
 
         {/* Hamburger Button */}
         <button className="hamburger" onClick={openMenu}>
-        <img src="../../../assets/images/icon-menu.svg" alt="hello" />
+        <img src="images/icon-menu.svg" alt="hello" />
         </button>
 
         {/* Desktop Nav Links */}
@@ -30,7 +30,7 @@ function Navbar() {
  
       {isOpen && (
         <div className="mobile-menu">
-          <button className="close-btn" onClick={closeMenu}> <img src="../../../assets/images/icon-menu-close.svg" alt="hello" /></button>
+          <button className="close-btn" onClick={closeMenu}> <img src="images/icon-menu-close.svg" alt="hello" /></button>
           <a href="#" onClick={closeMenu}>Home</a>
           <a href="#" onClick={closeMenu}>New</a>
           <a href="#" onClick={closeMenu}>popular</a>
