@@ -24,15 +24,16 @@ function Body() {
       <div class="div3">
         <div class="div3-h1">
           <h1>The Bright Future of Web 3.0?</h1>
-
-          <div>
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              power of the platform back into the hands of the people. But is it
-              really fulfilling its Promise?
-            </p>
-            <button>Read More</button>
-          </div>
+        </div>
+      </div>
+      <div className="div5 div3-h1">
+        <div>
+          <p>
+            We dive into the next evolution of the web that claims to put the
+            power of the platform back into the hands of the people. But is it
+            really fulfilling its Promise?
+          </p>
+          <button>Read More</button>
         </div>
       </div>
       {/* News */}

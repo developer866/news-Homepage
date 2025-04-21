@@ -20,8 +20,8 @@ function Navbar() {
         {/* Desktop Nav Links */}
         <div className="nav-links desktop">
           <a href="#">Home</a>
-          <a href="#">new</a>
-          <a href="#">popular</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
           <a href="#">Trending</a>
           <a href="#">Contact</a>
         </div>
@@ -33,7 +33,7 @@ function Navbar() {
           <button className="close-btn" onClick={closeMenu}> <img src="/images/icon-menu-close.svg" alt="hello" /></button>
           <a href="#" onClick={closeMenu}>Home</a>
           <a href="#" onClick={closeMenu}>New</a>
-          <a href="#" onClick={closeMenu}>popular</a>
+          <a href="#" onClick={closeMenu}>Popular</a>
           <a href="#" onClick={closeMenu}>Trending</a>
           <a href="#" onClick={closeMenu}>Contact</a>
         </div>
